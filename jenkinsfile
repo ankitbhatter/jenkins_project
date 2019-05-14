@@ -5,7 +5,7 @@ pipeline{
   tools{
     maven 'mvn'
     jdk 'java8'
-    sonar "sonar"
+    sonar 'sonar'
   }
   stages{
     stage('Initialize'){
