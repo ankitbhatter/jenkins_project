@@ -5,6 +5,7 @@ pipeline{
   tools{
     maven 'mvn'
     jdk 'java8'
+    sonar "sonar"
   }
   stages{
     stage('Initialize'){
@@ -24,5 +25,15 @@ pipeline{
         bat "mvn clean compile package"
       }
     }
+    stage('Sonar') {
+      steps{
+        def scannerHome = tool 'sonar' 
+        withSonarQubeEnv('sonarqube') {
+            bat "${scannerHome}/bin/sonar-scanner -Dsonar.projectName=jenkins_project -Dsonar.projectKey=jenkins_project -Dsonar.projectVersion=1.0
+          -Dsonar.sources=${WORKSPACE}/src -Dsonar.projectBaseDir=${WORKSPACE} -Dsonar.java.binaries=${WORKSPACE}/target"
+        }
+      }
+    }
+    
   }  
 }
