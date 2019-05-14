@@ -1,0 +1,11 @@
+#!groovy
+
+stage 'checkout code'
+node{
+  checkout scm
+}
+
+stage 'Build'
+node{
+  mvn clean compile package
+}
