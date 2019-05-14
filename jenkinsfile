@@ -26,8 +26,10 @@ pipeline{
       }
     }
     stage('Sonar') {
+      environment {
+        scannerHome = tool 'sonar' 
+      }
       steps{
-        def scannerHome = tool 'sonar' 
         withSonarQubeEnv('sonarqube') {
             bat "${scannerHome}/bin/sonar-scanner -Dsonar.projectName=jenkins_project -Dsonar.projectKey=jenkins_project -Dsonar.projectVersion=1.0 -Dsonar.sources=${WORKSPACE}/src -Dsonar.projectBaseDir=${WORKSPACE} -Dsonar.java.binaries=${WORKSPACE}/target"
         }
