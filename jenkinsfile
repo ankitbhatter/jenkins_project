@@ -1,12 +1,27 @@
 #!groovy
 
-stage 'checkout code'
-node{
-  checkout scm
-}
-
-stage 'Build'
-node{
-  echo "Test Step"
-  //mvn clean compile package
+pipeline{
+  agent any
+  tools{
+    maven 'mvn'
+    jdk 'java'
+  }
+  stages{
+    stage 'Initialize'{
+      steps{
+        echo "PATH = ${PATH}"
+        echo "M2_HOME = ${M2_HOME}"
+      }
+    }
+    stage('checkout'){
+      steps{
+        checkout scm
+      }
+    }
+    stage('Build') {
+      steps{
+        sh "mvn --version"
+      }
+    }
+  }  
 }
