@@ -110,7 +110,9 @@
 				</goals>
 				<configuration>
 				    <deployProperties>
-					<gradle>awesome</gradle>
+					<groupId>${project.groupId}</groupId>
+					 <artifactId>${project.artifactId}</artifactId>
+					 <version>${project.version}</version>
 				    </deployProperties>
 				    <artifactory>
 					<includeEnvVars>true</includeEnvVars>
