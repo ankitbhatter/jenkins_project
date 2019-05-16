@@ -125,6 +125,11 @@
 					<repoKey>libs-release-local</repoKey>
 					<snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
 				    </publisher>
+				    <buildInfo>
+					<buildName>plugin-demo</buildName>
+					<buildNumber>1</buildNumber>
+					<buildUrl>http://build-url.org</buildUrl>
+				    </buildInfo>
 				</configuration>
 			    </execution>
 			</executions>
