@@ -140,7 +140,7 @@
 					    <repoKey>libs-snapshot</repoKey>
 					<snapshotRepoKey>libs-snapshot</snapshotRepoKey>
 					<publishArtifacts>true</publishArtifacts>
-					<publishBuildInfo>true</publishBuildInfo>
+					<publishBuildInfo>false</publishBuildInfo>
 				    </publisher>
 				    <buildInfo>
 					<buildName>plugin-demo</buildName>
