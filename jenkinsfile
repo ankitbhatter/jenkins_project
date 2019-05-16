@@ -22,10 +22,20 @@ pipeline{
       steps{
         bat "mvn --version"
         bat "mvn clean compile package"
+      }
+    }
+    
+    stage('sonar Analysis') {
+      steps{
         bat "mvn sonar:sonar"
       }
     }
     
+    stage('Publish Artifact') {
+      steps{
+        bat "mvn deploy"
+      }
+    }
     
   }  
 }
