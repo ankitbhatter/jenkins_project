@@ -126,6 +126,7 @@
 					<excludePatterns>*-tests.jar</excludePatterns>
 					<repoKey>libs-release-local</repoKey>
 					<snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+					<publishArtifacts>true</publishArtifacts>
 				    </publisher>
 				    <buildInfo>
 					<buildName>plugin-demo</buildName>
