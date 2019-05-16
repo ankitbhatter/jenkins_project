@@ -137,6 +137,7 @@
 					<username>admin</username>
 					<password>Welcome@123</password>
 					<excludePatterns>*-tests.jar</excludePatterns>
+					    <repoKey>libs-snapshot</repoKey>
 					<snapshotRepoKey>libs-snapshot</snapshotRepoKey>
 					<publishArtifacts>true</publishArtifacts>
 					<publishBuildInfo>true</publishBuildInfo>
