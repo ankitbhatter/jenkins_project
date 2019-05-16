@@ -127,6 +127,7 @@
 					<repoKey>libs-release-local</repoKey>
 					<snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
 					<publishArtifacts>true</publishArtifacts>
+					<publishBuildInfo>true</publishBuildInfo>
 				    </publisher>
 				    <buildInfo>
 					<buildName>plugin-demo</buildName>
