@@ -74,9 +74,6 @@
 				  </manifest>
 				</archive>
 			     </configuration>
-			    <configuration>
-				<finalName>MathOperations</finalName>                   
-			    </configuration>
 			</plugin> 
 			<plugin>
 				<groupId>org.jacoco</groupId>
