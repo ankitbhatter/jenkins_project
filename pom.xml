@@ -132,7 +132,7 @@
 					 <version>${project.version}</version>
 				    </deployProperties>
 				    <artifactory>
-					<includeEnvVars>false</includeEnvVars>
+					<includeEnvVars>true</includeEnvVars>
 					<envVarsExcludePatterns>*password*,*secret*,*key*,*token*,*passphrase*</envVarsExcludePatterns>
 					<timeoutSec>60</timeoutSec>
 				    </artifactory>
