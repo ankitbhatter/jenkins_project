@@ -17,6 +17,12 @@
 		<name>DESKTOP-OG4790L-releases</name>
 		<url>http://localhost:8081/artifactory/libs-snapshot</url>
 	    </repository>
+	    <snapshotRepository>
+		<id>snapshots</id>
+		<name>DESKTOP-OG4790L-snapshots</name>
+		<url>http://localhost:8081/artifactory/libs-snapshot</url>
+		<uniqueVersion>false</uniqueVersion>
+	    </snapshotRepository>
 	</distributionManagement>
 
 	<dependencies>
