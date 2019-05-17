@@ -132,7 +132,7 @@
 					 <version>${project.version}</version>
 				    </deployProperties>
 				    <artifactory>
-					<includeEnvVars>true</includeEnvVars>
+					<includeEnvVars>false</includeEnvVars>
 					<envVarsExcludePatterns>*password*,*secret*,*key*,*token*,*passphrase*</envVarsExcludePatterns>
 					<timeoutSec>60</timeoutSec>
 				    </artifactory>
@@ -145,7 +145,6 @@
 					<snapshotRepoKey>libs-snapshot</snapshotRepoKey>
 					<publishArtifacts>true</publishArtifacts>
 					<publishBuildInfo>false</publishBuildInfo>
-					<snapshotVersionBehavior>non-unique</snapshotVersionBehavior>
 				    </publisher>
 				    <buildInfo>
 					<buildName>plugin-demo</buildName>
