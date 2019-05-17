@@ -145,6 +145,7 @@
 					<snapshotRepoKey>libs-snapshot</snapshotRepoKey>
 					<publishArtifacts>true</publishArtifacts>
 					<publishBuildInfo>false</publishBuildInfo>
+					<snapshotVersionBehavior>non-unique</snapshotVersionBehavior>
 				    </publisher>
 				    <buildInfo>
 					<buildName>plugin-demo</buildName>
