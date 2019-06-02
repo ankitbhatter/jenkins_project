@@ -37,5 +37,15 @@ pipeline{
       }
     }
     
-  }  
+    stage ('Deployment_pipeline') {
+          steps {
+              build job: 'DeployProject', wait: false
+          }
+      }    
+  }
+  post {
+    failure{
+        mail to:"someone@hotmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "BuildJob failed."
+    }
+  }
 }
